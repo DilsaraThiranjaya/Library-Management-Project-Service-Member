@@ -1,0 +1,12 @@
+lk\ijse\eca\memberservice\aspect\LoggingAspect.class
+lk\ijse\eca\memberservice\service\impl\MemberServiceImpl.class
+lk\ijse\eca\memberservice\handler\GlobalExceptionHandler.class
+lk\ijse\eca\memberservice\service\MemberService.class
+lk\ijse\eca\memberservice\mapper\MemberMapper.class
+lk\ijse\eca\memberservice\controller\MemberController.class
+lk\ijse\eca\memberservice\repository\MemberRepository.class
+lk\ijse\eca\memberservice\MemberServiceApplication.class
+lk\ijse\eca\memberservice\entity\Member.class
+lk\ijse\eca\memberservice\mapper\MemberMapperImpl.class
+lk\ijse\eca\memberservice\exception\ResourceNotFoundException.class
+lk\ijse\eca\memberservice\dto\MemberDTO.class
