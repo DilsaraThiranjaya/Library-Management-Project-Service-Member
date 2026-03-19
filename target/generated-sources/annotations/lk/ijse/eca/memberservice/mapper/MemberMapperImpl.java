@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-03-16T12:26:00+0530",
+    date = "2026-03-19T12:43:09+0530",
     comments = "version: 1.6.3, compiler: javac, environment: Java 25.0.2 (Oracle Corporation)"
 )
 @Component
@@ -28,6 +28,7 @@ public class MemberMapperImpl implements MemberMapper {
         memberDTO.setEmail( member.getEmail() );
         memberDTO.setPhone( member.getPhone() );
         memberDTO.setJoinedAt( member.getJoinedAt() );
+        memberDTO.setImageUrl( member.getImageUrl() );
 
         return memberDTO;
     }
@@ -45,6 +46,7 @@ public class MemberMapperImpl implements MemberMapper {
         member.setEmail( memberDTO.getEmail() );
         member.setPhone( memberDTO.getPhone() );
         member.setJoinedAt( memberDTO.getJoinedAt() );
+        member.setImageUrl( memberDTO.getImageUrl() );
 
         return member;
     }

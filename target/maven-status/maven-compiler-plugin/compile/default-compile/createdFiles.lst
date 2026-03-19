@@ -8,5 +8,6 @@ lk\ijse\eca\memberservice\repository\MemberRepository.class
 lk\ijse\eca\memberservice\MemberServiceApplication.class
 lk\ijse\eca\memberservice\entity\Member.class
 lk\ijse\eca\memberservice\mapper\MemberMapperImpl.class
+lk\ijse\eca\memberservice\client\FileServiceClient.class
 lk\ijse\eca\memberservice\exception\ResourceNotFoundException.class
 lk\ijse\eca\memberservice\dto\MemberDTO.class

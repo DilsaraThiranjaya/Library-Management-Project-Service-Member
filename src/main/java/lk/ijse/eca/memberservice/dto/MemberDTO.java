@@ -25,4 +25,7 @@ public class MemberDTO {
     private String phone;
     
     private LocalDateTime joinedAt;
+    
+    // Cloud storage image URL
+    private String imageUrl;
 }

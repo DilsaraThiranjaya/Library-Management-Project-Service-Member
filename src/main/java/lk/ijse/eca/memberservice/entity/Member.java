@@ -19,4 +19,7 @@ public class Member {
     private String email;
     private String phone;
     private LocalDateTime joinedAt;
+    
+    // Cloud storage image URL
+    private String imageUrl;
 }

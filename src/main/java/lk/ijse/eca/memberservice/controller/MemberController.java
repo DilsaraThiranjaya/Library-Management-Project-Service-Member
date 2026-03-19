@@ -5,8 +5,10 @@ import lk.ijse.eca.memberservice.dto.MemberDTO;
 import lk.ijse.eca.memberservice.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -42,5 +44,17 @@ public class MemberController {
     public ResponseEntity<Void> deleteMember(@PathVariable String id) {
         memberService.deleteMember(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping(value = "/{id}/image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<MemberDTO> uploadImage(
+            @PathVariable String id,
+            @RequestParam("file") MultipartFile file) {
+        return ResponseEntity.ok(memberService.uploadImage(id, file));
+    }
+
+    @DeleteMapping("/{id}/image")
+    public ResponseEntity<MemberDTO> deleteImage(@PathVariable String id) {
+        return ResponseEntity.ok(memberService.deleteImage(id));
     }
 }

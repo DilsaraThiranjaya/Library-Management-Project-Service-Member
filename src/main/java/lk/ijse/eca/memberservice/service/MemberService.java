@@ -10,4 +10,6 @@ public interface MemberService {
     MemberDTO getMemberById(String id);
     MemberDTO updateMember(String id, MemberDTO memberDTO);
     void deleteMember(String id);
+    MemberDTO uploadImage(String id, org.springframework.web.multipart.MultipartFile file);
+    MemberDTO deleteImage(String id);
 }
