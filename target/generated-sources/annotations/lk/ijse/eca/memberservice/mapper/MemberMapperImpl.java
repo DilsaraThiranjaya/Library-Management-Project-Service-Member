@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-03-19T12:43:09+0530",
-    comments = "version: 1.6.3, compiler: javac, environment: Java 25.0.2 (Oracle Corporation)"
+    date = "2026-03-25T12:53:21+0530",
+    comments = "version: 1.6.3, compiler: Eclipse JDT (IDE) 3.45.0.v20260224-0835, environment: Java 21.0.10 (Eclipse Adoptium)"
 )
 @Component
 public class MemberMapperImpl implements MemberMapper {
@@ -23,12 +23,12 @@ public class MemberMapperImpl implements MemberMapper {
 
         MemberDTO memberDTO = new MemberDTO();
 
-        memberDTO.setId( member.getId() );
-        memberDTO.setName( member.getName() );
         memberDTO.setEmail( member.getEmail() );
-        memberDTO.setPhone( member.getPhone() );
-        memberDTO.setJoinedAt( member.getJoinedAt() );
+        memberDTO.setId( member.getId() );
         memberDTO.setImageUrl( member.getImageUrl() );
+        memberDTO.setJoinedAt( member.getJoinedAt() );
+        memberDTO.setName( member.getName() );
+        memberDTO.setPhone( member.getPhone() );
 
         return memberDTO;
     }
@@ -41,12 +41,12 @@ public class MemberMapperImpl implements MemberMapper {
 
         Member member = new Member();
 
-        member.setId( memberDTO.getId() );
-        member.setName( memberDTO.getName() );
         member.setEmail( memberDTO.getEmail() );
-        member.setPhone( memberDTO.getPhone() );
-        member.setJoinedAt( memberDTO.getJoinedAt() );
+        member.setId( memberDTO.getId() );
         member.setImageUrl( memberDTO.getImageUrl() );
+        member.setJoinedAt( memberDTO.getJoinedAt() );
+        member.setName( memberDTO.getName() );
+        member.setPhone( memberDTO.getPhone() );
 
         return member;
     }
